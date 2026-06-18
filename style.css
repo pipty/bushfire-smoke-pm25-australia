@@ -209,6 +209,58 @@ h3 {
   border-bottom: 1px solid currentColor;
 }
 
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0 14px;
+}
+
+.chart-grid figure {
+  margin: 0;
+  padding: 12px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.chart-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wide-figure {
+  grid-column: 1 / -1;
+}
+
+.publication-heading {
+  margin-top: 56px;
+}
+
+.publication-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.publication-card {
+  min-height: 250px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.publication-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--rust);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .timeline {
   display: grid;
   gap: 16px;
@@ -312,8 +364,14 @@ h3 {
   }
 
   .three,
-  .foundation-layout {
+  .foundation-layout,
+  .chart-grid,
+  .publication-list {
     grid-template-columns: 1fr;
+  }
+
+  .wide-figure {
+    grid-column: auto;
   }
 
   .timeline-item {

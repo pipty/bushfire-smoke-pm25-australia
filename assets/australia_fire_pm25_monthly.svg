@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Australia-region seasonal pattern">
+  <style>
+    .bg{fill:#ffffff} .axis{stroke:#5d6c67;stroke-width:1.2} rect{fill:#335f53}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f} .small{font-size:12px;fill:#5d6c67}
+    .title{font-size:20px;font-weight:700} .subtitle{font-size:13px;fill:#5d6c67}
+  </style>
+  <rect class="bg" width="900" height="360" rx="8"/>
+  <text class="title" x="62" y="28">Australia-region seasonal pattern</text>
+  <text class="subtitle" x="62" y="48">Weekly sampled preview by calendar month, 2000-2019</text>
+  <line class="axis" x1="62" y1="306" x2="876" y2="306"/>
+  <line class="axis" x1="62" y1="54" x2="62" y2="306"/>
+  <rect x="62.0" y="226.8" width="60.5" height="79.2" rx="4"/><rect x="130.5" y="247.7" width="60.5" height="58.3" rx="4"/><rect x="199.0" y="270.4" width="60.5" height="35.6" rx="4"/><rect x="267.5" y="243.3" width="60.5" height="62.7" rx="4"/><rect x="336.0" y="232.8" width="60.5" height="73.2" rx="4"/><rect x="404.5" y="254.2" width="60.5" height="51.8" rx="4"/><rect x="473.0" y="243.7" width="60.5" height="62.3" rx="4"/><rect x="541.5" y="202.9" width="60.5" height="103.1" rx="4"/><rect x="610.0" y="125.2" width="60.5" height="180.8" rx="4"/><rect x="678.5" y="96.0" width="60.5" height="210.0" rx="4"/><rect x="747.0" y="111.6" width="60.5" height="194.4" rx="4"/><rect x="815.5" y="169.7" width="60.5" height="136.3" rx="4"/>
+  <g class="small"><text x="92.2" y="338" text-anchor="middle">Jan</text><text x="160.8" y="338" text-anchor="middle">Feb</text><text x="229.2" y="338" text-anchor="middle">Mar</text><text x="297.8" y="338" text-anchor="middle">Apr</text><text x="366.2" y="338" text-anchor="middle">May</text><text x="434.8" y="338" text-anchor="middle">Jun</text><text x="503.2" y="338" text-anchor="middle">Jul</text><text x="571.8" y="338" text-anchor="middle">Aug</text><text x="640.2" y="338" text-anchor="middle">Sep</text><text x="708.8" y="338" text-anchor="middle">Oct</text><text x="777.2" y="338" text-anchor="middle">Nov</text><text x="845.8" y="338" text-anchor="middle">Dec</text></g>
+</svg>

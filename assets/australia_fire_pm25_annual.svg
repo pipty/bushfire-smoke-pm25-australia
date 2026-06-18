@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Australia-region annual mean fire-PM2.5">
+  <style>
+    .bg{fill:#ffffff} .grid{stroke:#d7dfdc;stroke-width:1} .axis{stroke:#5d6c67;stroke-width:1.2}
+    .line{fill:none;stroke:#335f53;stroke-width:3} .dot{fill:#a44e2d}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f} .small{font-size:12px;fill:#5d6c67}
+    .title{font-size:20px;font-weight:700} .subtitle{font-size:13px;fill:#5d6c67}
+  </style>
+  <rect class="bg" width="900" height="360" rx="8"/>
+  <text class="title" x="62" y="28">Australia-region annual mean fire-PM2.5</text>
+  <text class="subtitle" x="62" y="48">Weekly sampled preview from daily 0.1-degree estimates, 2000-2019</text>
+  <g class="grid"><line x1="62" y1="306.0" x2="876" y2="306.0" /><line x1="62" y1="243.0" x2="876" y2="243.0" /><line x1="62" y1="180.0" x2="876" y2="180.0" /><line x1="62" y1="117.0" x2="876" y2="117.0" /><line x1="62" y1="54.0" x2="876" y2="54.0" /></g>
+  <line class="axis" x1="62" y1="306" x2="876" y2="306"/>
+  <line class="axis" x1="62" y1="54" x2="62" y2="306"/>
+  <g class="small"><text x="52" y="310.0" text-anchor="end">0.89</text><text x="52" y="247.0" text-anchor="end">1.49</text><text x="52" y="184.0" text-anchor="end">2.10</text><text x="52" y="121.0" text-anchor="end">2.71</text><text x="52" y="58.0" text-anchor="end">3.32</text><text x="62.0" y="338" text-anchor="middle">2000</text><text x="147.7" y="338" text-anchor="middle">2002</text><text x="233.4" y="338" text-anchor="middle">2004</text><text x="319.1" y="338" text-anchor="middle">2006</text><text x="404.7" y="338" text-anchor="middle">2008</text><text x="490.4" y="338" text-anchor="middle">2010</text><text x="576.1" y="338" text-anchor="middle">2012</text><text x="661.8" y="338" text-anchor="middle">2014</text><text x="747.5" y="338" text-anchor="middle">2016</text><text x="833.2" y="338" text-anchor="middle">2018</text></g>
+  <polyline class="line" points="62.0,185.1 104.8,117.3 147.7,140.6 190.5,198.4 233.4,211.2 276.2,273.6 319.1,197.7 361.9,213.5 404.7,285.1 447.6,216.7 490.4,289.8 533.3,124.5 576.1,135.2 618.9,249.1 661.8,208.3 704.6,226.4 747.5,278.6 790.3,202.0 833.2,196.4 876.0,98.9"/>
+  <circle class="dot" cx="62.0" cy="185.1" r="3.5"/><circle class="dot" cx="104.8" cy="117.3" r="3.5"/><circle class="dot" cx="147.7" cy="140.6" r="3.5"/><circle class="dot" cx="190.5" cy="198.4" r="3.5"/><circle class="dot" cx="233.4" cy="211.2" r="3.5"/><circle class="dot" cx="276.2" cy="273.6" r="3.5"/><circle class="dot" cx="319.1" cy="197.7" r="3.5"/><circle class="dot" cx="361.9" cy="213.5" r="3.5"/><circle class="dot" cx="404.7" cy="285.1" r="3.5"/><circle class="dot" cx="447.6" cy="216.7" r="3.5"/><circle class="dot" cx="490.4" cy="289.8" r="3.5"/><circle class="dot" cx="533.3" cy="124.5" r="3.5"/><circle class="dot" cx="576.1" cy="135.2" r="3.5"/><circle class="dot" cx="618.9" cy="249.1" r="3.5"/><circle class="dot" cx="661.8" cy="208.3" r="3.5"/><circle class="dot" cx="704.6" cy="226.4" r="3.5"/><circle class="dot" cx="747.5" cy="278.6" r="3.5"/><circle class="dot" cx="790.3" cy="202.0" r="3.5"/><circle class="dot" cx="833.2" cy="196.4" r="3.5"/><circle class="dot" cx="876.0" cy="98.9" r="3.5"/>
+</svg>
