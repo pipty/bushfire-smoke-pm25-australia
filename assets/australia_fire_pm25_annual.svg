@@ -2,8 +2,8 @@
   <style>
     .bg{fill:#ffffff} .grid{stroke:#d7dfdc;stroke-width:1} .axis{stroke:#5d6c67;stroke-width:1.2}
     .line{fill:none;stroke:#335f53;stroke-width:3} .dot{fill:#a44e2d}
-    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f} .small{font-size:12px;fill:#5d6c67}
-    .title{font-size:20px;font-weight:700} .subtitle{font-size:13px;fill:#5d6c67}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f} .small{font-size:16px;fill:#5d6c67}
+    .title{font-size:24px;font-weight:700} .subtitle{font-size:16px;fill:#5d6c67}
   </style>
   <rect class="bg" width="900" height="360" rx="8"/>
   <text class="title" x="62" y="28">Australia-region annual mean fire-PM2.5</text>

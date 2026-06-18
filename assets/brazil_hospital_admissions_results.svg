@@ -2,8 +2,8 @@
   <style>
     .bg{fill:#ffffff}.axis{stroke:#5d6c67;stroke-width:1.2}.grid{stroke:#d7dfdc;stroke-width:1}
     .bar{fill:#335f53}.bar2{fill:#a44e2d}.ci{stroke:#18211f;stroke-width:2}
-    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f}.title{font-size:21px;font-weight:700}
-    .sub{font-size:13px;fill:#5d6c67}.label{font-size:13px}.big{font-size:24px;font-weight:700;fill:#335f53}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f}.title{font-size:24px;font-weight:700}
+    .sub{font-size:16px;fill:#5d6c67}.label{font-size:16px}.big{font-size:28px;font-weight:700;fill:#335f53}
   </style>
   <rect class="bg" width="900" height="430" rx="8"/>
   <text class="title" x="56" y="34">Hospital admission risks associated with wildfire-related PM2.5</text>
