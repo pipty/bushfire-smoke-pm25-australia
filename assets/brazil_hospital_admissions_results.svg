@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Brazil wildfire-related PM2.5 hospital admission results">
+  <style>
+    .bg{fill:#ffffff}.axis{stroke:#5d6c67;stroke-width:1.2}.grid{stroke:#d7dfdc;stroke-width:1}
+    .bar{fill:#335f53}.bar2{fill:#a44e2d}.ci{stroke:#18211f;stroke-width:2}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#18211f}.title{font-size:21px;font-weight:700}
+    .sub{font-size:13px;fill:#5d6c67}.label{font-size:13px}.big{font-size:24px;font-weight:700;fill:#335f53}
+  </style>
+  <rect class="bg" width="900" height="430" rx="8"/>
+  <text class="title" x="56" y="34">Hospital admission risks associated with wildfire-related PM2.5</text>
+  <text class="sub" x="56" y="55">Brazil, 2000-2015. Percent increase per 10 µg/m³ over lag 0-1 days.</text>
+  <g>
+    <line class="grid" x1="220" y1="96" x2="220" y2="270"/>
+    <line class="grid" x1="370" y1="96" x2="370" y2="270"/>
+    <line class="grid" x1="520" y1="96" x2="520" y2="270"/>
+    <line class="grid" x1="670" y1="96" x2="670" y2="270"/>
+    <line class="axis" x1="145" y1="270" x2="745" y2="270"/>
+    <line class="axis" x1="145" y1="96" x2="145" y2="270"/>
+    <text class="sub" x="145" y="292" text-anchor="middle">0%</text>
+    <text class="sub" x="295" y="292" text-anchor="middle">1.5%</text>
+    <text class="sub" x="445" y="292" text-anchor="middle">3.0%</text>
+    <text class="sub" x="595" y="292" text-anchor="middle">4.5%</text>
+    <text class="sub" x="745" y="292" text-anchor="middle">6.0%</text>
+    <text class="label" x="56" y="134">All-cause</text>
+    <rect class="bar" x="145" y="115" width="165" height="25" rx="4"/>
+    <line class="ci" x1="296" y1="127.5" x2="325" y2="127.5"/><line class="ci" x1="296" y1="120" x2="296" y2="135"/><line class="ci" x1="325" y1="120" x2="325" y2="135"/>
+    <text class="label" x="324" y="134">1.65% (1.51-1.80)</text>
+    <text class="label" x="56" y="184">Cardiovascular</text>
+    <rect class="bar" x="145" y="165" width="110" height="25" rx="4"/>
+    <line class="ci" x1="223" y1="177.5" x2="287" y2="177.5"/><line class="ci" x1="223" y1="170" x2="223" y2="185"/><line class="ci" x1="287" y1="170" x2="287" y2="185"/>
+    <text class="label" x="268" y="184">1.10% (0.78-1.42)</text>
+    <text class="label" x="56" y="234">Respiratory</text>
+    <rect class="bar2" x="145" y="215" width="509" height="25" rx="4"/>
+    <line class="ci" x1="618" y1="227.5" x2="689" y2="227.5"/><line class="ci" x1="618" y1="220" x2="618" y2="235"/><line class="ci" x1="689" y1="220" x2="689" y2="235"/>
+    <text class="label" x="666" y="234">5.09% (4.73-5.44)</text>
+  </g>
+  <text class="big" x="56" y="350">0.53%</text>
+  <text class="sub" x="56" y="372">of all-cause hospital admissions attributable to wildfire-related PM2.5</text>
+  <text class="sub" x="56" y="394">Higher risks were reported for young children and adults aged 80 years and older.</text>
+</svg>

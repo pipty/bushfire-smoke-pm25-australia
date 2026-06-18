@@ -261,6 +261,20 @@ h3 {
   font-weight: 700;
 }
 
+.publication-figure {
+  margin: 18px 0;
+  padding: 8px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.publication-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .timeline {
   display: grid;
   gap: 16px;
