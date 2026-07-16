@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-07-16 - Progress update
+- Updated the Data Catalogue page to use the fuller historical predictor dataset inventory as the maintained source summary.
 - Added a historical predictor datasets and staged modelling strategy progress page.
 - Added the staged modelling strategy figure to public assets.
 - Updated the homepage and progress log to link the new update.
