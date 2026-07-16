@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historical Predictor Datasets and Staged Modelling Strategy | Bushfire-Smoke PM2.5 Australia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html">Bushfire-Smoke PM2.5 Australia</a><div class="nav-links"><a href="framework.html">Framework</a><a href="data-foundation.html">Data foundation</a><a href="modern-reference-period.html">Modern reference</a><a href="data-catalogue.html">Data catalogue</a><a href="progress-log.html">Progress log</a><a href="review-evidence.html">Review evidence</a></div></nav></header>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Progress update - 2026-07-16</p>
+      <h1>Historical predictor datasets and staged modelling strategy</h1>
+      <p class="lead">The current milestone is preparation of historical predictor datasets for reconstructing bushfire-smoke PM2.5 exposure in Australia. The primary modelling target is monthly reconstruction from 1960 onward, using the modern CARE fire-PM2.5 product as the 2000-2023 reference outcome for calibration. Newly assembled historical predictors now support a staged, uncertainty-aware reconstruction strategy.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><p class="eyebrow">Overview</p><h2>From modern reference evidence to historical reconstruction inputs</h2></div>
+      <p>This update extends the v0.2.0 progress-evidence site. It records the currently available predictor stack and the staged modelling logic that will guide the next phase. It does not claim that historical reconstruction or model validation has been completed.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><p class="eyebrow">Modelling Inputs</p><h2>Currently available modelling datasets</h2></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Dataset</th><th>Role in modelling</th><th>Time coverage</th><th>Temporal resolution</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>DEA Land Cover</td><td>Australia-specific land-cover and fuel-context refinement.</td><td>1988-2024</td><td>Annual</td><td>30 m land-cover classes; useful for later-period land-cover refinement and comparison with coarser historical products.</td></tr>
+            <tr><td>ERA5 meteorology</td><td>Core climate backbone for smoke-generation and dispersion predictors.</td><td>1960 onward target</td><td>Daily, aggregated to monthly</td><td>Includes temperature, dew point, precipitation, surface pressure, wind components, and ventilation-related variables at approximately 0.1-degree resolution.</td></tr>
+            <tr><td>ERA5 PBLH</td><td>Boundary-layer and atmospheric mixing context.</td><td>1960 onward target</td><td>Daily, aggregated to monthly</td><td>Used to represent mixing depth / dispersion conditions in the monthly modelling table.</td></tr>
+            <tr><td>CEMS FWI</td><td>Fire-weather and fuel-dryness summaries.</td><td>1960 onward target; product available from 1940 to present</td><td>Daily, aggregated to monthly</td><td>Includes FWI, FFMC, DMC, DC, ISI, BUI, and severity indicators. These are meteorology-derived indices, not independent fire occurrence observations.</td></tr>
+            <tr><td>HILDA+</td><td>Long-term land-use / land-cover and broad fuel-availability proxy.</td><td>1960-2020</td><td>Annual, joined to monthly rows</td><td>States layers are the first-pass input; transition layers can support later change diagnostics.</td></tr>
+            <tr><td>ERA5-Land soil moisture</td><td>Moisture and antecedent dryness predictor.</td><td>1960 onward target; product available from 1950 to near-real-time</td><td>Monthly</td><td>Soil water layers 1 and 2 provide near-surface and shallow-root-zone moisture context.</td></tr>
+            <tr><td>SPEI</td><td>Drought and climatic water-balance context.</td><td>1960 onward target; product available from 1901 onward</td><td>Monthly</td><td>SPEI01, SPEI03, SPEI06, and SPEI12 represent short- to longer-term dryness.</td></tr>
+            <tr><td>FireCCI</td><td>Observed burned-area source proxy for satellite-era reconstruction.</td><td>1982-2018; 1994 missing</td><td>Monthly</td><td>Main observed burned-area source for 1982-1999 and a modern cross-check. No coverage for 1960-1981.</td></tr>
+            <tr><td>AVHRR NDVI</td><td>Vegetation greenness and fuel-condition proxy.</td><td>1981-2013</td><td>Daily source aggregated to monthly</td><td>Monthly mean, median, maximum, and valid-count summaries support vegetation-condition modelling.</td></tr>
+            <tr><td>DEM</td><td>Static topographic predictor.</td><td>Static</td><td>Static</td><td>Elevation and derived terrain metrics can support spatial structure in the reconstruction model.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="figure-note">Coverage is reported from the current data documentation and is intentionally conservative where detailed processing checks are still pending.</p>
+    </section>
+
+    <section class="section figure-block">
+      <div class="section-heading"><p class="eyebrow">Staged Modelling</p><h2>Staged modelling strategy</h2></div>
+      <p class="figure-message">The reconstruction strategy uses predictor availability to define staged modelling periods and period-specific confidence.</p>
+      <figure class="strategy-figure"><img src="assets/img/staged-modelling-strategy.png" alt="Conceptual staged modelling strategy for historical bushfire-smoke PM2.5 reconstruction in Australia"><figcaption>Conceptual staged modelling framework for historical bushfire-smoke PM2.5 reconstruction in Australia. The primary product is monthly reconstruction from 1960 onward, with different predictor availability and confidence across periods.</figcaption></figure>
+      <ul class="clean-list">
+        <li><strong>Stage 1, 2000-2023:</strong> modern CARE reference period for calibration and diagnostics.</li>
+        <li><strong>Stage 2, 1982-1999:</strong> historical reconstruction with observed burned area and NDVI available.</li>
+        <li><strong>Stage 3, 1960-1981:</strong> earlier reconstruction using climate, drought, fire-weather, soil-moisture, and land-cover proxies.</li>
+        <li>Monthly reconstruction is prioritised because predictor availability is more consistent before the satellite era.</li>
+        <li>Confidence varies across periods and should be interpreted accordingly.</li>
+      </ul>
+    </section>
+
+    <section class="section note-band">
+      <h2>What this means for the next phase</h2>
+      <p>The next step is to build a monthly modelling table and begin staged reconstruction using the assembled predictors. This will involve harmonising predictors to the modelling grid and monthly temporal structure, calibrating against the modern CARE reference period, back-casting earlier periods with stage-specific predictor sets, and quantifying uncertainty by period.</p>
+    </section>
+  </main>
+  <footer class="footer"><p><a href="index.html">Home</a> - Historical Bushfire-Smoke PM2.5 Exposure Reconstruction for Australia</p></footer>
+</body>
+</html>

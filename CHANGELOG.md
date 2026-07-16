@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-16 - Progress update
+- Added a historical predictor datasets and staged modelling strategy progress page.
+- Added the staged modelling strategy figure to public assets.
+- Updated the homepage and progress log to link the new update.
+- Preserved v0.2.0 modern reference-period evidence and earlier progress pages.
+
 ## v0.2.0 - 2026-07-07
 
 Modern reference-period evidence package and progress-evidence redesign.
